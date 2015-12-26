@@ -22,7 +22,7 @@ You should create one R script called run_analysis.R that does the following.
 Uses the [dplr R package](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
 
 ## Running the Script
-1. [Download the repo]{https://github.com/arcaynus/Getting_and_Cleaning_Data_Tidy_Data/archive/master.zip)
+1. [Download the repo](https://github.com/arcaynus/Getting_and_Cleaning_Data_Tidy_Data/archive/master.zip)
 2. Run the `run_analysis.R` file using source
 
 ## run_analysus.R Process
