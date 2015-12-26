@@ -16,20 +16,106 @@ I performed the following steps to the source data to tidy it up:
 9. Turned the subjectID column into a factor variable
 10. Renamed the columns to something more meaningful (Assignment Part 4)
 11. Used the dplr R package, groups and summarizes the data by mean (Assignment Part 5)
-12. Saved the file as 'tidyData.txt' using tabs as delimiter
+12. Saved the file as `tidyData.txt` using tabs as delimiter
   1. tidyData.txt contains the average of each variable grouped by subjectID and activityName variables
 
 Please refer to [run_analysis.R] (https://github.com/arcaynus/Getting_and_Cleaning_Data_Tidy_Data/blob/master/run_analysis.R) for extensive comments.
 
+### tidyData.txt Identifiers
+* `subjectID` id of the voluntary recipient 1:30                                          
+* `activityName` the activity name that the corresponding mesurements were recorded
+
+### tidyData.txt Measurements
+Represents the means of the measurements in `data/train/X_train.txt` and `data/test/X_test.txt`
+* `timeBodyAccelerometerMean-XAxis`                    
+* `timeBodyAccelerometerMean-YAxis`                    
+* `timeBodyAccelerometerMean-ZAxis`                    
+* `timeBodyAccelerometerStd-XAxis`                     
+* `timeBodyAccelerometerStd-YAxis`                     
+* `timeBodyAccelerometerStd-ZAxis`                     
+* `timeGravityAccelerometerMean-XAxis`                 
+* `timeGravityAccelerometerMean-YAxis`                 
+* `timeGravityAccelerometerMean-ZAxis`                 
+* `timeGravityAccelerometerStd-XAxis`                  
+* `timeGravityAccelerometerStd-YAxis`                  
+* `timeGravityAccelerometerStd-ZAxis`                  
+* `timeBodyAccelerometerJerkSignalMean-XAxis`          
+* `timeBodyAccelerometerJerkSignalMean-YAxis`          
+* `timeBodyAccelerometerJerkSignalMean-ZAxis`          
+* `timeBodyAccelerometerJerkSignalStd-XAxis`           
+* `timeBodyAccelerometerJerkSignalStd-YAxis`           
+* `timeBodyAccelerometerJerkSignalStd-ZAxis`           
+* `timeBodyGyroscopeMean-XAxis`                        
+* `timeBodyGyroscopeMean-YAxis`                        
+* `timeBodyGyroscopeMean-ZAxis`                        
+* `timeBodyGyroscopeStd-XAxis`                         
+* `timeBodyGyroscopeStd-YAxis`                         
+* `timeBodyGyroscopeStd-ZAxis`                         
+* `timeBodyGyroscopeJerkSignalMean-XAxis`              
+* `timeBodyGyroscopeJerkSignalMean-YAxis`              
+* `timeBodyGyroscopeJerkSignalMean-ZAxis`              
+* `timeBodyGyroscopeJerkSignalStd-XAxis`               
+* `timeBodyGyroscopeJerkSignalStd-YAxis`               
+* `timeBodyGyroscopeJerkSignalStd-ZAxis`               
+* `timeBodyAccelerometerMagMean`                       
+* `timeBodyAccelerometerMagStd`                        
+* `timeGravityAccelerometerMagMean`                    
+* `timeGravityAccelerometerMagStd`                     
+* `timeBodyAccelerometerJerkSignalMagMean`             
+* `timeBodyAccelerometerJerkSignalMagStd`              
+* `timeBodyGyroscopeMagMean`                           
+* `timeBodyGyroscopeMagStd`                            
+* `timeBodyGyroscopeJerkSignalMagMean`                 
+* `timeBodyGyroscopeJerkSignalMagStd`                  
+* `frequencyBodyAccelerometerMean-XAxis`               
+* `frequencyBodyAccelerometerMean-YAxis`               
+* `frequencyBodyAccelerometerMean-ZAxis`               
+* `frequencyBodyAccelerometerStd-XAxis`                
+* `frequencyBodyAccelerometerStd-YAxis`                
+* `frequencyBodyAccelerometerStd-ZAxis`           
+* `frequencyBodyAccelerometerMeanFreq-XAxis`           
+* `frequencyBodyAccelerometerMeanFreq-YAxis`           
+* `frequencyBodyAccelerometerMeanFreq-ZAxis`           
+* `frequencyBodyAccelerometerJerkSignalMean-XAxis`     
+* `frequencyBodyAccelerometerJerkSignalMean-YAxis`     
+* `frequencyBodyAccelerometerJerkSignalMean-ZAxis`     
+* `frequencyBodyAccelerometerJerkSignalStd-XAxis`      
+* `frequencyBodyAccelerometerJerkSignalStd-YAxis`      
+* `frequencyBodyAccelerometerJerkSignalStd-ZAxis`      
+* `frequencyBodyAccelerometerJerkSignalMeanFreq-XAxis` 
+* `frequencyBodyAccelerometerJerkSignalMeanFreq-YAxis` 
+* `frequencyBodyAccelerometerJerkSignalMeanFreq-ZAxis` 
+* `frequencyBodyGyroscopeMean-XAxis`                   
+* `frequencyBodyGyroscopeMean-YAxis`                   
+* `frequencyBodyGyroscopeMean-ZAxis`                   
+* `frequencyBodyGyroscopeStd-XAxis`                    
+* `frequencyBodyGyroscopeStd-YAxis`                    
+* `frequencyBodyGyroscopeStd-ZAxis`                    
+* `frequencyBodyGyroscopeMeanFreq-XAxis`               
+* `frequencyBodyGyroscopeMeanFreq-YAxis`               
+* `frequencyBodyGyroscopeMeanFreq-ZAxis`               
+* `frequencyBodyAccelerometerMagMean`                  
+* `frequencyBodyAccelerometerMagStd`                   
+* `frequencyBodyAccelerometerMagMeanFreq`              
+* `frequencyBodyBodyAccelerometerJerkSignalMagMean`    
+* `frequencyBodyBodyAccelerometerJerkSignalMagStd`     
+* `frequencyBodyBodyAccelerometerJerkSignalMagMeanFreq`
+* `frequencyBodyBodyGyroscopeMagMean`                  
+* `frequencyBodyBodyGyroscopeMagStd`                   
+* `frequencyBodyBodyGyroscopeMagMeanFreq`              
+* `frequencyBodyBodyGyroscopeJerkSignalMagMean`        
+* `frequencyBodyBodyGyroscopeJerkSignalMagStd`         
+* `frequencyBodyBodyGyroscopeJerkSignalMagMeanFreq`
+
 ## Data Text Files Used
-* 'data/features_info.txt': Shows information about the variables used on the feature vector.
-* 'data/features.txt': List of all features.
-* 'data/activity_labels.txt': Links the class labels with their activity name.
-* 'data/train/X_train.txt': Training set.
-* 'data/train/y_train.txt': Training labels.
-* 'data/test/X_test.txt': Test set.
-* 'data/test/y_test.txt': Test labels.
-* 'data/train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+* `data/features_info.txt`: Shows information about the variables used on the feature vector.
+* `data/features.txt`: List of all features.
+* `data/activity_labels.txt`: Links the class labels with their activity name.
+* `data/train/X_train.txt`: Training set.
+* `data/train/y_train.txt`: Training labels.
+* `data/test/X_test.txt`: Test set.
+* `data/test/y_test.txt`: Test labels.
+* `data/train/subject_train.txt`: Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
 ## Variable Units
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
